@@ -4,12 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="style-form.css">
     <title>Register</title>
 </head>
-<link rel="stylesheet" type="text/css" href="style-form.css">
-<header><h2>Hostel Registration Form</h2></header>
+
+
+
 <body>
-    <form action=" form_submit.php" method="post" data-netlify="true" data-netlify-recaptcha="true">
+    <header>
+        <div id="title">
+            <img src="./img/logo1.png" alt="logo">
+            <h1 id="header">Student Accomodation Division</h1>
+        </div>
+
+        <div>
+            <ul id="tabs">
+                <li class="tabs" style="color: yellow;"><a href="./index.html"> Home </a></li>
+                <li class="tabs"><a href="./hostel.html"> Hostels </a></li>
+                <li class="tabs"><a href="./register.html"> Registration </a></li>
+                <li class="tabs"><a href="./about.html"> About </a></li>
+                <li class="tabs"><a href="./contact.html"> Contact Us </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <form action=" form_submit.php" method="post" data-netlify="true" data-netlify-recaptcha="true" >
         <div>
             <img src="arunachalam.jpg" alt="Picture of Arunachalam hall">
         </div>
@@ -255,5 +275,31 @@
         <div class="submit-success" data-submit=""><p>Registration is Success!</p></div>
         <div class="submit-error" data-submit=""<p>Error</p>
     </form>
+
+    <footer>
+        <div>
+            <div id="address" class="footer-tab">
+                <p>University of Peradeniya,<br>
+                Peradeniya (20400),<br>
+            Sri Lanka.</p>
+            </div>
+
+            <div id="tel" class="footer-tab">
+                <h5>General:</h5>
+                <p> +94 81 238 8693 / 9151 / 9152, <br>
+                    +94 81 239 4400 / 4401</p>
+                <h5>Office:</h5>
+                <p> +94 81 239 4404</p>
+            </div>
+
+            <div id="email" class="footer-tab">
+                <p>arsci@pdn.ac.lk</p>
+            </div>
+        </div>
+        <div>
+            <p id="end">Copyright ©2023 All rights reserved - Faculty of Science, UoP | This template is made with  by Group 15</p>
+        </div>
+    </footer>
+
 </body>
 </html>
