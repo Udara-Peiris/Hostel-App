@@ -6,7 +6,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
 </head>
+<link rel="stylesheet" type="text/css" href="style-form.css">
+<header><h2>Hostel Registration Form</h2></header>
 <body>
-    <h1>uvuv</h1>
+    <form action=" form_submit.php" method="post" data-netlify="true" data-netlify-recaptcha="true">
+        <div>
+            <img src="arunachalam.jpg" alt="Picture of Arunachalam hall">
+        </div>
+        <div class="center-form">
+        <fieldset>
+            Frist Name:<br>
+            <input type="text" name="frist-name" placeholder="Enter your first name " autofocus required><br>
+            Last name:<br>
+            <input type="text" name="last-name" placeholder="Enter your last name " required><br>
+            Registration No:<br>
+            <input type="text" name="id" placeholder="Enter your registration number " required><br>
+            Gender:<br>
+            <input type="radio" id="gender" name="gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="gender" name="gender" value="Female">
+            <label for="Female">Female</label>
+            <br>
+            Tel.No.:<br>
+            <input type="tel" id="phone" size="10" pattern="[0]{1}[0-9]{9}" placeholder="Enter your telephone number " required><br>
+            Address:<br>
+            <input type="text" name="address-line-1" placeholder="Enter your address line 1 " required><br>
+            <input type="text" name="address-line-2" placeholder="Enter your address line 2 " required><br>
+            <input type="text" name="city" placeholder="Enter your city " required><br>
+            Province:<br>
+            <select>
+                <option value="Central">Central</option>
+                <option value="Eastern">Eastern</option>
+                <option value="Northern">Northern</option>
+                <option value="North Central">North Central</option>
+                <option value="North Western">North Western</option>
+                <option value="Sabaragamuwa">Sabaragamuwa</option>
+                <option value="Southern">Southern</option>
+                <option value="Uva">Uva</option>
+                <option value="Western">Western</option>  
+            </select>
+            <br>
+            District:<br>
+            <select  name="District" id="District">
+                <optgroup label="Central">
+                    <option value="Kandy">Kandy</option>
+                    <option value="Matale">Matale</option>
+                    <option value="Nuwara Eliya">Nuwara Eliya</option>
+                </optgroup>
+                <optgroup label="Eastern">
+                    <option value="Ampara">Ampara</option>
+                    <option value="Batticaloa">Batticaloa</option>
+                    <option value="Trincomalee">Trincomalee</option>
+                </optgroup>
+                <optgroup label="Northern">
+                    <option value="Jaffna">Jaffna</option>
+                    <option value="Mannar">Mannar</option>
+                    <option value="Mullaitivu">Mullaitivu</option>
+                    <option value="Vavuniya">Vavuniya</option>
+                    <option value="Kilinochchi ">Kilinochchi </option>
+                </optgroup>
+                <optgroup label="North Central">
+                    <option value="Anuradhapura">Anuradhapura</option>
+                    <option value="Polonnaruwa">Polonnaruwa</option>
+                </optgroup>
+                <optgroup label="North Western">
+                    <option value="Kurunegala">Kurunegala</option>
+                    <option value="Puttalam">Puttalam</option>
+                </optgroup>
+                <optgroup label="Sabaragamuwa">
+                    <option value="Ratnapura">Ratnapura</option>
+                    <option value="Kegalle">Kegalle</option>
+                </optgroup>
+                <optgroup label="Southern">
+                    <option value="Galle">Galle</option>
+                    <option value="Hambantota">Hambantota</option>
+                    <option value="Matara">Matara</option>
+                </optgroup>
+                <optgroup label="Uva">
+                    <option value="Badulla">Badulla</option>
+                    <option value="Monaragala">Monaragala</option>
+                </optgroup>
+                <optgroup label="Western">
+                    <option value="Colombo">Colombo</option>
+                    <option value="Gampaha">Gampaha</option>
+                    <option value="Kalutara">Kalutara</option>
+                </optgroup>
+            </select>
+            <br>
+            Divisional Sectariant:<br>
+            <input type="text" name="divisinal-sectriant" placeholder="Enter your divisional sectriant "  required><br><br>
+            Preffered Hostels:<br>
+            <label>1st Preffered hostel  : </label> 
+            <select name="Hostel" >
+                <optgroup label="Male">
+                    <option value="Akbar Nell hall">Akbar Nell hall</option>
+                    <option value="Arunachalam Hall">Arunachalam Hall</option>
+                    <option value="Hindagala Hall">Hindagala Hall</option>
+                    <option value="Ivor Jenings Hall">Ivor Jenings Hall</option>
+                    <option value="James Peiris Hall">James Peiris Hall</option>
+                    <option value="Jayathilake Hall">Jayathilake Hall</option>
+                    <option value="Lalith Athulathmudali Hall">Lalith Athulathmudali Hall</option>
+                    <option value="	Mahailuppallama/Male Hall">	Mahailuppallama/Male Hall</option>
+                    <option value="Marcus Fernando Hall">Marcus Fernando Hall</option>
+                    <option value="Marrs Hall">Marrs Hall</option>
+                    <option value="New Akbar Hall">New Akbar Hall</option>
+                    <option value="Sangaramaya & Kehelpannala Bhikku Hostel">Sangaramaya & Kehelpannala Bhikku Hostel</option>
+                    <option value="Senaka Bibile Hall">Senaka Bibile Hall</option>
+                </optgroup>
+                <optgroup label="Female">
+                    <option value="Ediriweera Sarachchndra & Gunapala Malalasekera Hall">Ediriweera Sarachchndra & Gunapala Malalasekera Hall</option>
+                    <option value="Hilda Obeysekera Hall">Hilda Obeysekera Hall</option>
+                    <option value="Mahailuppallama/Female Hall">	Mahailuppallama/Female Hall</option>
+                    <option value="Mahakanda Hall">Mahakanda Hall</option>
+                    <option value="Ramanathan Hall">Ramanathan Hall</option>
+                    <option value="Sangamitta Hall">Sangamitta Hall</option>
+                    <option value="Sarasavi Medura Hall">Sarasavi Medura Hall</option>
+                    <option value="Sarasavi Uyana  Hall">Sarasavi Uyana  Hall</option>
+                    <option value="Wijewardena Hall">Wijewardena Hall</option>
+                </optgroup>
+             </select>
+                <br>
+            <label>2nd Preffered hostel: </label>    
+            <select name="Hostel" >
+                <optgroup label="Male">
+                    <option value="Akbar Nell hall">Akbar Nell hall</option>
+                    <option value="Arunachalam Hall">Arunachalam Hall</option>
+                    <option value="Hindagala Hall">Hindagala Hall</option>
+                    <option value="Ivor Jenings Hall">Ivor Jenings Hall</option>
+                    <option value="James Peiris Hall">James Peiris Hall</option>
+                    <option value="Jayathilake Hall">Jayathilake Hall</option>
+                    <option value="Lalith Athulathmudali Hall">Lalith Athulathmudali Hall</option>
+                    <option value="	Mahailuppallama/Male Hall">	Mahailuppallama/Male Hall</option>
+                    <option value="Marcus Fernando Hall">Marcus Fernando Hall</option>
+                    <option value="Marrs Hall">Marrs Hall</option>
+                    <option value="New Akbar Hall">New Akbar Hall</option>
+                    <option value="Sangaramaya & Kehelpannala Bhikku Hostel">Sangaramaya & Kehelpannala Bhikku Hostel</option>
+                    <option value="Senaka Bibile Hall">Senaka Bibile Hall</option>
+                </optgroup>
+                <optgroup label="Female">
+                    <option value="Ediriweera Sarachchndra & Gunapala Malalasekera Hall">Ediriweera Sarachchndra & Gunapala Malalasekera Hall</option>
+                    <option value="Hilda Obeysekera Hall">Hilda Obeysekera Hall</option>
+                    <option value="	Mahailuppallama/Female Hall">	Mahailuppallama/Female Hall</option>
+                    <option value="Mahakanda Hall">Mahakanda Hall</option>
+                    <option value="Ramanathan Hall">Ramanathan Hall</option>
+                    <option value="Sangamitta Hall">Sangamitta Hall</option>
+                    <option value="Sarasavi Medura Hall">Sarasavi Medura Hall</option>
+                    <option value="Sarasavi Uyana  Hall">Sarasavi Uyana  Hall</option>
+                    <option value="Wijewardena Hall">Wijewardena Hall</option>
+                </optgroup>
+            </select>
+            <br>
+            <label>3rd Preffered hostel: </label> 
+                
+            <select name="Hostel">
+                <optgroup label="Male">
+                    <option value="Akbar Nell hall">Akbar Nell hall</option>
+                    <option value="Arunachalam Hall">Arunachalam Hall</option>
+                    <option value="Hindagala Hall">Hindagala Hall</option>
+                    <option value="Ivor Jenings Hall">Ivor Jenings Hall</option>
+                    <option value="James Peiris Hall">James Peiris Hall</option>
+                    <option value="Jayathilake Hall">Jayathilake Hall</option>
+                    <option value="Lalith Athulathmudali Hall">Lalith Athulathmudali Hall</option>
+                    <option value="	Mahailuppallama/Male Hall">	Mahailuppallama/Male Hall</option>
+                    <option value="Marcus Fernando Hall">Marcus Fernando Hall</option>
+                    <option value="Marrs Hall">Marrs Hall</option>
+                    <option value="New Akbar Hall">New Akbar Hall</option>
+                    <option value="Sangaramaya & Kehelpannala Bhikku Hostel">Sangaramaya & Kehelpannala Bhikku Hostel</option>
+                    <option value="Senaka Bibile Hall">Senaka Bibile Hall</option>
+                </optgroup>
+                <optgroup label="Female">
+                    <option value="Ediriweera Sarachchndra & Gunapala Malalasekera Hall">Ediriweera Sarachchndra & Gunapala Malalasekera Hall</option>
+                    <option value="Hilda Obeysekera Hall">Hilda Obeysekera Hall</option>
+                    <option value="	Mahailuppallama/Female Hall">	Mahailuppallama/Female Hall</option>
+                    <option value="Mahakanda Hall">Mahakanda Hall</option>
+                    <option value="Ramanathan Hall">Ramanathan Hall</option>
+                    <option value="Sangamitta Hall">Sangamitta Hall</option>
+                    <option value="Sarasavi Medura Hall">Sarasavi Medura Hall</option>
+                    <option value="Sarasavi Uyana  Hall">Sarasavi Uyana  Hall</option>
+                    <option value="Wijewardena Hall">Wijewardena Hall</option>
+                </optgroup>
+            </select>
+                 <br>
+            <label>4th Preffered hostel: </label> 
+            <select name="Hostel" >
+                <optgroup label="Male">
+                    <option value="Akbar Nell hall">Akbar Nell hall</option>
+                    <option value="Arunachalam Hall">Arunachalam Hall</option>
+                    <option value="Hindagala Hall">Hindagala Hall</option>
+                    <option value="Ivor Jenings Hall">Ivor Jenings Hall</option>
+                    <option value="James Peiris Hall">James Peiris Hall</option>
+                    <option value="Jayathilake Hall">Jayathilake Hall</option>
+                    <option value="Lalith Athulathmudali Hall">Lalith Athulathmudali Hall</option>
+                    <option value="	Mahailuppallama/Male Hall">	Mahailuppallama/Male Hall</option>
+                    <option value="Marcus Fernando Hall">Marcus Fernando Hall</option>
+                    <option value="Marrs Hall">Marrs Hall</option>
+                    <option value="New Akbar Hall">New Akbar Hall</option>
+                    <option value="Sangaramaya & Kehelpannala Bhikku Hostel">Sangaramaya & Kehelpannala Bhikku Hostel</option>
+                    <option value="Senaka Bibile Hall">Senaka Bibile Hall</option>
+                </optgroup>
+                <optgroup label="Female">
+                    <option value="Ediriweera Sarachchndra & Gunapala Malalasekera Hall">Ediriweera Sarachchndra & Gunapala Malalasekera Hall</option>
+                    <option value="Hilda Obeysekera Hall">Hilda Obeysekera Hall</option>
+                    <option value="	Mahailuppallama/Female Hall">	Mahailuppallama/Female Hall</option>
+                    <option value="Mahakanda Hall">Mahakanda Hall</option>
+                    <option value="Ramanathan Hall">Ramanathan Hall</option>
+                    <option value="Sangamitta Hall">Sangamitta Hall</option>
+                    <option value="Sarasavi Medura Hall">Sarasavi Medura Hall</option>
+                    <option value="Sarasavi Uyana  Hall">Sarasavi Uyana  Hall</option>
+                    <option value="Wijewardena Hall">Wijewardena Hall</option>
+                </optgroup>
+            </select>
+                <br>
+            <label>5th Preffered hostel: </label> 
+            <select name="Hostel">
+                <optgroup label="Male">
+                    <option value="Akbar Nell hall">Akbar Nell hall</option>
+                    <option value="Arunachalam Hall">Arunachalam Hall</option>
+                    <option value="Hindagala Hall">Hindagala Hall</option>
+                    <option value="Ivor Jenings Hall">Ivor Jenings Hall</option>
+                    <option value="James Peiris Hall">James Peiris Hall</option>
+                    <option value="Jayathilake Hall">Jayathilake Hall</option>
+                    <option value="Lalith Athulathmudali Hall">Lalith Athulathmudali Hall</option>
+                    <option value="	Mahailuppallama/Male Hall">	Mahailuppallama/Male Hall</option>
+                    <option value="Marcus Fernando Hall">Marcus Fernando Hall</option>
+                    <option value="Marrs Hall">Marrs Hall</option>
+                    <option value="New Akbar Hall">New Akbar Hall</option>
+                    <option value="Sangaramaya & Kehelpannala Bhikku Hostel">Sangaramaya & Kehelpannala Bhikku Hostel</option>
+                    <option value="Senaka Bibile Hall">Senaka Bibile Hall</option>
+                </optgroup>
+                <optgroup label="Female">
+                    <option value="Ediriweera Sarachchndra & Gunapala Malalasekera Hall">Ediriweera Sarachchndra & Gunapala Malalasekera Hall</option>
+                    <option value="Hilda Obeysekera Hall">Hilda Obeysekera Hall</option>
+                    <option value="Gunapala Malelasekara Hall">Gunapala Malelasekara Hall</option>
+                    <option value="	Mahailuppallama/Female Hall">	Mahailuppallama/Female Hall</option>
+                    <option value="Mahakanda Hall">Mahakanda Hall</option>
+                    <option value="Ramanathan Hall">Ramanathan Hall</option>
+                    <option value="Sangamitta Hall">Sangamitta Hall</option>
+                    <option value="Sarasavi Medura Hall">Sarasavi Medura Hall</option>
+                    <option value="Sarasavi Uyana  Hall">Sarasavi Uyana  Hall</option>
+                    <option value="Wijewardena Hall">Wijewardena Hall</option>
+                </optgroup>
+            </select>
+            <br>
+            <br>
+            <input type="submit" value="submit">
+        </fieldset>
+        </div>
+        <div class="submit-success" data-submit=""><p>Registration is Success!</p></div>
+        <div class="submit-error" data-submit=""<p>Error</p>
+    </form>
 </body>
 </html>
